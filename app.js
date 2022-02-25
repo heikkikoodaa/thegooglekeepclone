@@ -1,3 +1,5 @@
+'use strict';
+
 class App {
   constructor() {
     this.notes = JSON.parse(localStorage.getItem('notes')) || [];
