@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Google Keep Clone - Bootcamp Project #1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <input type="text" placeholder="Title" class="modal-title">
+      <textarea type="textarea" placeholder="Take a note..." class="modal-text"></textarea>
+      <span class="modal-close-button">Close</span>
+    </div>
+  </div>
+  <main>
+    <header>
+      <img src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" alt="Logo" class="header-logo">
+      <h2 class="header-title">Keep</h2>
+    </header>
+    <div id="form-container">
+      <form autocomplete="off" id="form">
+        <input type="text" placeholder="Title" name="note-title" id="note-title">
+        <textarea type="text" placeholder="Take a note..." name="note-text" id="note-text"></textarea>
+        <div id="form-buttons">
+          <button id="submit-button">Submit</button>
+          <button id="form-close-button">Close form</button>
+        </div>
+      </form>
+    </div>
+    <div id="notes"></div>
+      <div id="placeholder">
+        <img id="placeholder-logo" src="" alt="Lightbulb">
+        <p id="placeholder-text">Notes you add appear here</p>
+      </div>
+      <div id="color-tooltip">
+        <div class="color-option" data-color="#fff" id="white"></div>
+        <div class="color-option" data-color="#d7aefb" id="purple"></div>
+        <div class="color-option" data-color="#fbbc04" id="orange"></div>
+        <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+      </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
